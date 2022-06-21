@@ -1,0 +1,42 @@
+/* initialisation de la page */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --bg1: #f0f0f0;
+  --fg1: #131313;
+  font-family: "montserrat";
+  font-weight: 600;
+  font-size: 20px;
+}
+body {
+  background-color: var(--bg1);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-title {
+  text-transform: capitalize;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--fg1);
+  margin: 4px 0;
+}
+.menu-links {
+  display: none;
+}
