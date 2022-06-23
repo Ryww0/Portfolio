@@ -7,6 +7,7 @@
 :root {
   --bg1: #f0f0f0;
   --fg1: #131313;
+  --bgNav: rgb(124, 227, 255);
   font-family: "montserrat";
   font-weight: 600;
   font-size: 20px;
@@ -18,26 +19,59 @@ body {
   width: 90%;
   margin: auto;
 }
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+h3 {
+  writing-mode: vertical-rl;
+}
 
 /* navbar */
 nav {
-  margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
 .nav-title {
   text-transform: capitalize;
+  margin: 15px;
 }
-.menu {
+.burger {
+  margin: 15px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+.burger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger.active .bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.burger.active .bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
 }
 .bar {
   width: 25px;
   height: 3px;
   background-color: var(--fg1);
   margin: 4px 0;
+  transition: 150ms ease;
 }
-.menu-links {
-  display: none;
+.menu {
+  position: absolute;
+  left: -100vh;
+  background-color: var(--bgNav);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  transition: 350ms ease-in-out;
+}
+.menu.active {
+  left: 0;
 }
