@@ -98,7 +98,8 @@ nav {
 /*FIXME animation*/
 .menu li::after,
 .nav-title::after,
-.socials li::after {
+.socials li::after,
+.mail::after {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -139,4 +140,7 @@ nav {
   margin: 0 10px;
   font-size: 0.8rem;
   padding-bottom: 5px;
+}
+.mail {
+  position: relative;
 }
