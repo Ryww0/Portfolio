@@ -25,6 +25,11 @@ body {
 .absolute {
   position: absolute;
 }
+h1,
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
 h3 {
   writing-mode: vertical-rl;
   font-weight: 500;
@@ -36,6 +41,7 @@ nav {
   justify-content: space-between;
 }
 .nav-title {
+  position: relative;
   text-transform: capitalize;
   margin: 15px;
 }
@@ -76,11 +82,21 @@ nav {
 .menu.active {
   left: 0;
 }
-h1,
-h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
+.menu li {
+  position: relative;
+  text-align: end;
 }
+.menu li::after,
+.nav-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 3px;
+  background: #000;
+  content: "";
+}
+
 .title {
   display: flex;
   flex-direction: row-reverse;
