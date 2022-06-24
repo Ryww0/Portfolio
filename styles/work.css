@@ -1,4 +1,4 @@
 .work-img {
   height: 500px;
-  background: #000;
+  background: var(--fg1);
 }
