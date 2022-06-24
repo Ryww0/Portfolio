@@ -4,6 +4,10 @@
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: var(--fg1);
+}
 :root {
   --bg1: #f0f0f0;
   --fg1: #131313;
@@ -86,6 +90,7 @@ nav {
   position: relative;
   text-align: end;
 }
+/*FIXME animation*/
 .menu li::after,
 .nav-title::after {
   position: absolute;
@@ -93,7 +98,7 @@ nav {
   right: 0;
   width: 15px;
   height: 3px;
-  background: #000;
+  background: var(--fg1);
   content: "";
 }
 
