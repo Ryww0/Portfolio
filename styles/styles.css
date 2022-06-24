@@ -27,6 +27,7 @@ body {
 }
 h3 {
   writing-mode: vertical-rl;
+  font-weight: 500;
 }
 
 /* navbar */
@@ -74,4 +75,14 @@ nav {
 }
 .menu.active {
   left: 0;
+}
+h1,
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.title {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }

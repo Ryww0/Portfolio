@@ -1,0 +1,9 @@
+p {
+  width: 65%;
+  margin: 60px 0;
+}
+main {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
