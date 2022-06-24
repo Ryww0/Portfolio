@@ -107,3 +107,10 @@ nav {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+.description {
+  text-align: center;
+}
+
+.m100-0 {
+  margin: 100px 0;
+}
