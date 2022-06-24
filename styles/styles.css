@@ -11,6 +11,8 @@ a {
 :root {
   --bg1: #f0f0f0;
   --fg1: #131313;
+  --fg2: #f0f0f0;
+  --bg2: #131313;
   --bgNav: rgb(124, 227, 255);
   font-family: "montserrat";
   font-weight: 600;
